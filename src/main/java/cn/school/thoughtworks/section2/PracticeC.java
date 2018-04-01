@@ -5,9 +5,8 @@ import java.util.Map.Entry;
 
 public class PracticeC {
     Map<String, Integer> countSameElements(List<String> collection1) {
-        //实现练习要求，并改写该行代码。
-        HashSet<String> uniqueWords = new HashSet<String>(collection1);
 
+        HashSet<String> uniqueWords = new HashSet<String>(collection1);
 
         HashMap<String, Integer> lists = new HashMap<>();
 
@@ -22,9 +21,6 @@ public class PracticeC {
                 }else {
                     lists.put(key, count);
                 }
-
-
-
             }else {
                 int count = Collections.frequency(collection1, word);
 
@@ -34,9 +30,7 @@ public class PracticeC {
                 }else {
                     lists.put(word, count);
                 }
-
             }
-
         }
 
         System.out.println(lists);
